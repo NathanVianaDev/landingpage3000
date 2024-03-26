@@ -308,6 +308,10 @@ footer{
         align-items: center;
         justify-content: center;
     }
+    .titulo{
+      padding: 0;
+      margin: 0 auto;
+    }
     .itens{
         display: block;
         align-items: center;
@@ -323,11 +327,18 @@ footer{
         justify-content: center;
         text-align: center;
     }
-    main .itens .img img{
+    .logos img{
+      width: 30%;
+    }
+    main .itens .img{
         margin: 0;
-        padding: 0;
-        width: 80vw;
-        height: 40vh;
+        padding: 10px 0px;
+        width: 95%;
+    }
+    .img img{
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
     .titulo h1{
         width: 50vw;
@@ -335,7 +346,8 @@ footer{
         font-size: 50px;
     }
     .titulo h2{
-        font-size: 20px;
+        font-size: 30px;
+        padding: 0 20px;
     }
     .back{
         margin: 0;
@@ -343,9 +355,9 @@ footer{
         display: block;
     }
     .description{
-        padding-top: 40px;
-        padding-bottom: 20px;
-        font-size: 20px
+        
+        padding: 40px 20px;
+        font-size: 20px;
     }
     .back.card{
         align-items: center;
@@ -359,16 +371,25 @@ footer{
     .produto{
         padding-top: 150px;
         padding-bottom: 150px;
+        width: 100vw;
     }
     .produto img{
-        width: 50vw;
-        align-items: center;
-        justify-content: center;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
-    .contact-form .heading{
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+    .contact-form{
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+
+    }
+    textarea{
+      width: inherit;
+    }
+    .app{
+      width: 100%;
+      padding: 0;
     }
 
 }
